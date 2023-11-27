@@ -4,34 +4,69 @@
     <meta charset="UTF-8">
     <title>Галерея Лисенка Дениса Олександровича</title>
     <style>
-        h1 {
+        body 
+        {
+            font-family: Arial, sans-serif;
+        }
+
+        h1
+        {
             text-align: center;
             font-size: 20px;
         }
 
-        p a {
+        p a 
+        {
             font-style: italic;
         }
 
-        h2, h3 {
+        h2, h3 
+        {
             text-align: center;
+            margin: 10px;
         }
 
-        h3:nth-of-type(1) {
+        h3:nth-of-type(1) 
+        {
             font-size: 70%;
         }
 
-        h3:nth-of-type(2) {
+        h3:nth-of-type(2), h3:nth-of-type(3) 
+        {
             font-size: 140%;
         }
 
-        h3:nth-of-type(3) {
-            font-size: 140%;
-        }
-
-        img {
+        img 
+        {
             display: block;
             margin: 0 auto;
+            max-width: 100%;
+            height: auto; 
+        }
+
+        .block
+        {
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightgrey; 
+        }
+
+        @media only screen and (min-width: 768px) 
+        {
+            .block 
+            {
+                width: 48%; 
+                display: inline-block;
+            }
+        }
+
+        @media only screen and (min-width: 992px) 
+        {
+            .block
+            {
+                width: 48%; 
+            }
         }
     </style>
 </head>
@@ -40,15 +75,17 @@
 
     <p><a href="index.html"><i>Назад на головну</i></a></p>
 
-    <h2>Мої зображення</h2>
-    
-    <h3>Зображення у цій папці</h3>
-    <!-- https://github.com/DenisLysenko0/Pr4/blob/main/200.jpg%26text%3DIts%20me%2C%20Denis%26italic.org.chromium.not-a-real-type.830859E7-C463-44C9-9EC5-282CDB793F47.org.chromium.not-a-real-type.830859E7-C463-44C9-9EC5-282CDB793F47 -->
-    
-    <h3>Зображення у папці</h3>
-    <!-- Link. -->
-    
-    <h3>Зображення онлайн</h3>
-    <!-- Link. -->
+    <div class="block">
+        <h2>Мої зображення</h2>
+
+        <h3>Зображення у цій папці</h3>
+        <img src="https://github.com/DenisLysenko0/Pr4/blob/main/200.jpg%26text%3DIts%20me%2C%20Denis%26italic.org.chromium.not-a-real-type.830859E7-C463-44C9-9EC5-282CDB793F47.org.chromium.not-a-real-type.830859E7-C463-44C9-9EC5-282CDB793F47" alt="Зображення у цій папці">
+
+        <h3>Зображення у папці</h3>
+        <img src="ваш-силка-сюди" alt="Зображення у папці">
+
+        <h3>Зображення онлайн</h3>
+        <img src="ваш-силка-сюди" alt="Зображення онлайн">
+    </div>
 </body>
 </html>
