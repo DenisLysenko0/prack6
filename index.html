@@ -1,35 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>Персональна сторінка Лисенка Дениса Олександровича</title>
     <style>
-        a:link {
-            color: green; 
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        a:visited {
-            color: red; 
+
+        a:link 
+        {
+            color: green;
         }
-        h1 {
+
+        a:visited 
+        {
+            color: red;
+        }
+
+        h1 
+        {
             text-align: center;
             font-size: 24px;
         }
-        p {
+
+        p 
+        {
             font-size: 120%;
+        }
+
+        p a 
+        {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) 
+        {
+            p a 
+            {
+                display: inline-block;
+                margin: 0 10px;
+            }
         }
     </style>
 </head>
+
 <body>
     <h1>Персональна сторінка Лисенка Дениса Олександровича</h1>
 
     <h2>Коротко про мене тут!</h2>
     <p>За цими посиланнями, ви дізнаєтеся коротку та цікаву інформацію про мене.</p>
     <p>Загалом про мої захоплення, вподобання, вміння та інше...</p>
-    
-    <p><a href="biography.html">Автобіографія</a></p>
-    <p><a href="friends.html">Друзі</a></p>
-    <p><a href="nowadays.html">Сьогодення</a></p>
-    <p><a href="gallery.html">Галерея</a></p>
-    
+
+    <p><a href="biography.html">Автобіографія</a><a href="friends.html">Друзі</a><a href="nowadays.html">Сьогодення</a><a href="gallery.html">Галерея</a></p>
+
 </body>
+
 </html>
